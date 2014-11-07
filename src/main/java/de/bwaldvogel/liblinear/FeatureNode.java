@@ -1,6 +1,8 @@
 package de.bwaldvogel.liblinear;
 
-public class FeatureNode implements Feature {
+import java.io.Serializable;
+
+public class FeatureNode implements Feature, Serializable {
 
     public final int index;
     public double    value;

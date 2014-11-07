@@ -2,6 +2,7 @@ package de.bwaldvogel.liblinear;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 
 
 /**
@@ -31,7 +32,7 @@ import java.io.IOException;
  *       [ ] -&gt; (1,-0.1) (2,-0.2) (3,0.1) (4,1.1) (5,0.1) (6,1) (-1,?)
  * </pre>
  */
-public class Problem {
+public class Problem implements Serializable {
 
     /** the number of training data */
     public int         l;
