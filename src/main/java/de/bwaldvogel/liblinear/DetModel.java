@@ -1,5 +1,7 @@
 package de.bwaldvogel.liblinear;
 
+import java.io.Serializable;
+
 /**
  * The Model class does not provide any useful interace to the outside world: e.g., impossible to set weights.
  * It's not possible to extend it neither (and I dont like it anyway).
@@ -8,7 +10,9 @@ package de.bwaldvogel.liblinear;
  * @author xtof
  *
  */
-public class DetModel {
+public class DetModel implements Serializable {
+	private static final long serialVersionUID = -103375077637815608L;
+	
 	Model mod;
 	public DetModel(Model m) {
 		mod=m;
